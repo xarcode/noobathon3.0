@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/c918b29de7.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        .footer {
+        height: 100vh;
+        background-color: rgb(255, 255, 0);
+        position: relative;
+        clip-path: polygon(0 15%, 100% 0, 100% 100%, 0% 100%);
+        }
+        .data
+        {
+        padding-top:100px;
+        color: black;
+        }
+        h1{
+        margin-left:50px;
+        font-size : 70px;
+        }
+        .inpt{
+            display: flex;
+        }
+        input{
+            /* width: 100%; */
+            margin-left: 10px;
+            padding: 20px;
+            border-radius: 30px;
+            font-size: large;
+            border: 1px solid rgb(123, 123, 123);
+            background-color: rgb(255, 255, 211);
+        }
+        input[type = 'email']{
+            width: 87%;
+        }
+        input[type='button']{
+            cursor: pointer;
+        }
+        input:focus{
+            outline: none;
+        }
+        .cpyrght
+        {
+            background-color: rgb(255, 225, 32);
+            position: fixed; 
+            left:10px; 
+            bottom:0px; 
+            width: 100%;
+        }
+        .cpyrght p{
+            width: 100%;
+            text-align: center;
+        }
+        .btmline{
+            margin-top: 35px;
+            display: flex;
+            justify-content: space-around;
+        }
+        .one
+        {
+            width: 200px;
+        }
+        .one h2{
+            font-size: 200%;
+        }
+        .one a{
+            text-decoration: none;
+            color: black;
+        }
+        .social_links i{
+            margin-left: 17px;
+        }
+        .logo{
+            width: 150px;
+            height: 150px;
+            margin-right: 100px;
+        }
+        .up{
+            display: flex;
+            justify-content: space-between;
+        }
+        .rotate {
+            animation: rotation 6s;
+        }
+        @keyframes rotation {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(359deg);
+            }
+        }
+        .linear {
+            animation-timing-function: linear;
+        }
+        .infinite {
+            animation-iteration-count: infinite;
+        }
+    </style>
+</head>
+<body>
+        <div class="footer">
+    
+            <div class="data">
+                <div class="up">
+                    <h1>Enter Some <br> Text Here </h1>
+                    <img class="logo rotate linear infinite" src="/noobathon3.0/assets/footer_img/logo.png" alt="logo">
+                </div>
+                <form>
+                    <div class="inpt">
+                        <input type="email" placeholder="Enter Your Email-id">
+                        <input type="button" value="Submit">
+                    </div>
+                </form>
+                <div class="btmline">
+                    <div class="one">
+                        <h2>Shop</h2>
+                        <a href=""><span>&emsp;lorem</span></a><br>
+                        <a href=""><span>&emsp;lorem</span></a>
+                    </div>
+                    <div class="one">
+                        <h2>Shop</h2>
+                        <a href=""><span>&emsp;lorem</span></a><br>
+                        <a href=""><span>&emsp;lorem</span></a>
+                    </div>
+                    <div class="one">
+                        <h2>Shop</h2>
+                        <a href=""><span>&emsp;lorem</span></a><br>
+                        <a href=""><span>&emsp;lorem</span></a>
+                    </div>
+                    <div class="one social_links">
+                        <h2>Social Links</h2>
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                        <a href=""><i class="fa-brands fa-facebook"></i></a>
+                        <a href=""><i class="fa-brands fa-twitter"></i></a>
+                        <a href=""><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="cpyrght">
+                    <p>&copy;Copyright 2023 | Company_Name </p>
+                </div>
+            </div>
+        </div>
+</body>
+</html>
