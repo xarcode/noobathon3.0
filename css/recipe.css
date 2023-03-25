@@ -5,7 +5,7 @@ h2, h3,h4, h5,h6 p{
     padding: 0;
 }
 /* Recipe divisons css*/
-.recipe-btn-div, .recipe-img-div, .recipe-txt-div{
+.recipe-btn-div,.recipe-img-div, .recipe-txt-div{
     
     height: 100vh;
     display: inline-block;
@@ -181,23 +181,10 @@ hr{
     height: 25px;
 }
 
-
-
-
-.modals {
-    width: 300px;
+.modeltop{
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
 }
-
-button {
-    width: 100px;
-    height: 50px;
-    margin-bottom: 30px;
-    margin-left: 50px;
-}
-
 .modal {
     display: none;
     /* Hidden by default */
@@ -205,7 +192,7 @@ button {
     /* Stay in place */
     z-index: 1;
     /* Sit on top */
-    padding-top: 125px;
+    padding-top: 100px;
     /* Location of the box */
     left: 0;
     top: 0;
@@ -221,17 +208,14 @@ button {
     /* Black w/ opacity */
 }
 
+/* Modal Content */
 .modal-content {
-    /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #fefefe;
     margin: auto;
-    padding: 40px;
-    width: 50%;
-    background-color: #f4f3e7;
-    border: 5px #f7c43c solid;
-    border-radius: 20px;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
 }
-
 
 /* The Close Button */
 .close {
@@ -246,61 +230,4 @@ button {
     color: #000;
     text-decoration: none;
     cursor: pointer;
-}
-
-.modal-content h2,
-p,
-li {
-    text-align: center;
-    margin: 20px 0;
-    font-size: 18px;
-    padding: 0 30px;
-    list-style-type: none;
-}
-
-.modal-content h2 {
-    font-family: Montserrat;
-    margin-bottom: 30px;
-    font-size: 40px;
-}
-
-/* TITLE BUTTON CSS */
-.overview {
-    display: flex;
-    flex-direction: column;
-    margin-top: -80px;
-}
-
-.overview h3 {
-    text-align: center;
-    font-family: Montserrat;
-    text-decoration: underline rgb(150, 150, 150);
-    color: rgb(86, 86, 86);
-}
-
-.overview-btn {
-    margin: auto;
-}
-
-.modal-btn {
-    margin: 40px 0 0 7px;
-    height: 50px;
-    width: 200px;
-    background-color: none;
-    border-radius: 50px;
-    cursor: pointer;
-    border: 2px solid #872f45;
-    background-color: transparent;
-
-    color: #591B2A;
-    font-size: 1rem;
-    font-weight: 600;
-    box-shadow: 0 6px 6px rgba(0, 0, 0, 0.6);
-}
-
-.modal-btn:hover {
-    transition: all .3s;
-    border: 2px solid #591B2A;
-    background-color: #591B2A;
-    color: #ffffff;
 }
