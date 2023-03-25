@@ -1,0 +1,97 @@
+h2, h3,h4, h5,h6 p{
+    margin: 0;
+    padding: 0;
+}
+/* Recipe divisons css*/
+.recipe-btn-div, .recipe-img-div, .recipe-txt-div{
+    
+    height: 100vh;
+    display: inline-block;
+}
+
+.recipe-img-div{
+    
+}   
+  
+.main-img{
+    margin: auto;
+    margin-top: 100px;
+    background-color: black;
+    text-align: center;
+    height: 60vh;
+    width: 70%;
+}
+.main-img img{
+    width: 110%;
+}
+
+/* Recipe Text */
+.recipe-txt-div{
+}   
+.recipe-txt{
+    margin: 100px 0 0 130px;
+}
+hr{
+    width: 60%;
+}
+.recipe-description{
+    width: 60%;
+}
+.desc-btn {
+    margin: 20px 0 0 0px;
+    height: 70px;
+    width: 300px;
+    background-color: none;
+    border-radius: 50px;
+    cursor: pointer;
+    border: 2px solid #872f45;
+    background-color: transparent;
+
+    color: #591B2A;
+    font-size: 1.5em;
+    font-weight: 800;
+}
+
+/* Ingredient text*/
+.ingredient-txt{
+    margin: 50px 0 0 50px;
+}
+
+/* NUTRITIONAL VALUE CSS */
+.recipe-nval-div{
+    margin: auto;
+    position: absolute;
+    display: flex;
+    bottom: 80px;
+    width: 32%;
+    height: 15vh;
+    justify-content: space-around;
+}
+
+.nval-div{
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    background-color: black;
+}
+
+ /* Recipe Button Div*/ 
+.recipe-btn-div{
+} 
+.ingredient-btn-div{
+    margin-top: 80px;
+}
+.ingredient-btn {
+    margin: 50px 0 0 50px;
+    height: 70px;
+    width: 300px;
+    background-color: none;
+    border-radius: 50px;
+    cursor: pointer;
+    border: 2px solid #872f45;
+    background-color: transparent;
+
+    color: #591B2A;
+    font-size: 1.5em;
+    font-weight: 800;
+}
