@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,17 +10,19 @@
     <link rel="stylesheet" href="../css/index.css">
     <link rel="stylesheet" href="../css/reset.css">
     <style>
-        body{
+        body {
             background-color: aliceblue;
             height: 100vh;
         }
     </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
 </head>
+
 <body>
-    <nav class="navbar">
+    <nav class="custom-navbar">
         <div class="nav-left">
             <a href="./recipe.html">Recipes</a>
-            <a href="./recommend.html">Recommend</a>  
+            <a href="./recommend.html">Recommend</a>
         </div>
         <div class="nav-center">
             <a href="./index.html">
@@ -34,15 +37,157 @@
     <div class="hero-section">
         <div class="hero-textcontent">
             <h1 class="hero-title">
-                It's time to cook <br> a symphony
+                Time to cook <br> a symphony
             </h1>
             <p class="hero-subtitle">
-                No more boring cooking articles. Time to make cooking fun.
+                No more boring cooking articles. <br> Time to make cooking fun.
             </p>
+            <div class="button">
+                Recipes >
+            </div>
         </div>
         <div class="hero-image-section">
-            <img src="../assets/hero-image.png" alt="" class="hero-image">
+            <img src="../assets/hero-image-removebg-preview.png" alt="" class="hero-image">
+            <div class="burst">
+                <svg class="rotating-slow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 771 771"><defs><filter x="-3.5%" y="-3.5%" width="107%" height="107%" filterUnits="objectBoundingBox" id="filter-bm-58z8e9r-1"><feGaussianBlur stdDeviation="9" in="SourceGraphic"></feGaussianBlur></filter></defs><g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity=".65"><g id="Home" transform="translate(-526 -192)" fill="#FFF"><path id="Star" filter="url(#filter-bm-58z8e9r-1)" d="m911.5 701.893-21.167 252.513 7.239-253.296-49.306 248.556 35.554-250.892-76.825 241.472 63.421-245.334-103.379 231.353 90.491-236.691-128.632 218.323 116.423-225.071-152.267 202.548 140.89-210.62L659.954 858.98l163.587-193.521L630.02 829.046l184.226-173.988-210.62 140.89 202.548-152.267-225.071 116.423 218.323-128.632-236.691 90.491 231.353-103.379-245.334 63.421 241.472-76.825-250.892 35.554 248.556-49.306-253.296 7.239L787.107 577.5l-252.513-21.167 253.296 7.239-248.556-49.306 250.892 35.554-241.472-76.825 245.334 63.421-231.353-103.379 236.691 90.491-218.323-128.632 225.071 116.423-202.548-152.267 210.62 140.89L630.02 325.954l193.521 163.587L659.954 296.02l173.988 184.226-140.89-210.62 152.267 202.548-116.423-225.071 128.632 218.323-90.491-236.691 103.379 231.353-63.421-245.334 76.825 241.472-35.554-250.892 49.306 248.556-7.239-253.296L911.5 453.107l21.167-252.513-7.239 253.296 49.306-248.556-35.554 250.892 76.825-241.472-63.421 245.334 103.379-231.353-90.491 236.691 128.632-218.323-116.423 225.071 152.267-202.548-140.89 210.62 173.988-184.226-163.587 193.521 193.521-163.587-184.226 173.988 210.62-140.89-202.548 152.267 225.071-116.423-218.323 128.632 236.691-90.491-231.353 103.379 245.334-63.421-241.472 76.825 250.892-35.554-248.556 49.306 253.296-7.239-252.513 21.167 252.513 21.167-253.296-7.239 248.556 49.306-250.892-35.554 241.472 76.825-245.334-63.421 231.353 103.379-236.691-90.491 218.323 128.632-225.071-116.423 202.548 152.267-210.62-140.89 184.226 173.988-193.521-163.587 163.587 193.521-173.988-184.226 140.89 210.62-152.267-202.548 116.423 225.071-128.632-218.323 90.491 236.691-103.379-231.353 63.421 245.334-76.825-241.472 35.554 250.892-49.306-248.556 7.239 253.296z"></path></g></g></svg>
+              </div>
         </div>
     </div>
+    <div class="rotd">
+        <div class="rotd-heading">
+            <h1>Recipe of the Day</h1>
+        </div>
+        <section class="row">
+
+            <!-- Recipe text -->
+            <div class="recipe-txt-div col sm-12 md-12 lg-4">
+                <div class="recipe-txt">
+                    <h5>Italian Cuisine</h5>
+                    <h1>Fiorentina Steak</h1>
+                    <h6>Main Ingredient - Chicken, Brocolli, Nuts</h6>
+                    <p>⭐ ⭐ ⭐ ⭐ ⭐  Rating</p>
+                    <button class="desc-btn">Try It!</button>
+                </div>
+                
+            </div>
+            <div class="recipe-img-div col sm-12 md-12 lg-4">
+    
+                 <!--MAIN RECIPE IMAGE -->
+                <div class="recipe-img">
+                    <div class="main-img">
+                        <img src="../assets/Main.png">
+                    </div>
+                    
+                </div>
+    
+    
+                
+            </div>
+            <div class="recipe-btn-div col sm-12 md-12 lg-4">
+                <div class="ingredient-btn-div">
+    
+                    <div class="recipe-nval-div">
+                        <div class="nval-div ">
+                            <h6>Fats<br>12.4%</h6>
+                        </div>
+                        <div class="nval-div ">
+                            <h6>Calorie<br>800cal</h6>
+                        </div>
+                        <div class="nval-div ">
+                            <h6>Carbs<br>200gms</h6>
+                        </div>
+                    </div>
+    
+                </div>
+            </div>
+            
+        </section>
+    </div>
+    <div class="category-cards">
+        <div class="category-card card-one">
+            <img src="../assets/breakfast-removebg-preview.png" alt="">
+            <h1>Breakfast</h1>
+            <a href="" class="button arrow ">
+                <span class="button_text">Recipes</span>
+
+                <span class="arrow"><svg width="22" height="18" xmlns="http://www.w3.org/2000/svg">
+                        <g stroke="#fff" stroke-width="3" fill="none" fill-rule="evenodd" stroke-linecap="round">
+                            <path d="m2.086 2 7.299 6.819-7.299 6.82M12.086 2l7.299 6.819-7.299 6.82"></path>
+                        </g>
+                    </svg></span>
+
+            </a>
+        </div>
+        <div class="category-card card-two">
+            <img src="../assets/breakfast-removebg-preview.png" alt="">
+            <h1>Breakfast</h1>
+            <a href="" class="button arrow ">
+                <span class="button_text">Recipes</span>
+
+                <span class="arrow"><svg width="22" height="18" xmlns="http://www.w3.org/2000/svg">
+                        <g stroke="#fff" stroke-width="3" fill="none" fill-rule="evenodd" stroke-linecap="round">
+                            <path d="m2.086 2 7.299 6.819-7.299 6.82M12.086 2l7.299 6.819-7.299 6.82"></path>
+                        </g>
+                    </svg></span>
+
+            </a>
+        </div>
+        <div class="category-card card-three">
+            <img src="../assets/breakfast-removebg-preview.png" alt="">
+            <h1>Breakfast</h1>
+            <a href="" class="button arrow">
+                <span class="button_text">Recipes</span>
+
+                <span class="arrow"><svg width="22" height="18" xmlns="http://www.w3.org/2000/svg">
+                        <g stroke="#fff" stroke-width="3" fill="none" fill-rule="evenodd" stroke-linecap="round">
+                            <path d="m2.086 2 7.299 6.819-7.299 6.82M12.086 2l7.299 6.819-7.299 6.82"></path>
+                        </g>
+                    </svg></span>
+
+            </a>
+        </div>
+    </div>
+    <div class="food-type-cards">
+        <div class="food-type-card food-type-card-one">
+            <div class="food-type-info">
+                <div class="food-type-text">
+                    <h1>Healthy Recipes .. ?</h1>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum animi officia ab, aspernatur quibusdam et assumenda doloribus perspiciatis perferendis aperiam </p>
+                </div>
+                <img src="../assets/breakfast-removebg-preview.png" alt="">
+            </div>
+            <a href="" class="button arrow " style="border: 9px #02e088 solid !important;">
+                <span class="button_text">Recipes</span>
+
+                <span class="arrow"><svg width="22" height="18" xmlns="http://www.w3.org/2000/svg">
+                        <g stroke="#fff" stroke-width="3" fill="none" fill-rule="evenodd" stroke-linecap="round">
+                            <path d="m2.086 2 7.299 6.819-7.299 6.82M12.086 2l7.299 6.819-7.299 6.82"></path>
+                        </g>
+                    </svg></span>
+
+            </a>
+        </div>
+        <div class="food-type-card food-type-card-two">
+            <div class="food-type-info">
+                <div class="food-type-text">
+                    <h1>Need a quick bite..?</h1>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum animi officia ab, aspernatur quibusdam et assumenda doloribus perspiciatis perferendis aperiam </p>
+                </div>
+                <img src="../assets/breakfast-removebg-preview.png" alt="">
+            </div>
+            <a href="" class="button arrow " style="border: 9px #ff9000 solid !important;">
+                <span class="button_text">Recipes</span>
+
+                <span class="arrow"><svg width="22" height="18" xmlns="http://www.w3.org/2000/svg">
+                        <g stroke="#fff" stroke-width="3" fill="none" fill-rule="evenodd" stroke-linecap="round">
+                            <path d="m2.086 2 7.299 6.819-7.299 6.82M12.086 2l7.299 6.819-7.299 6.82"></path>
+                        </g>
+                    </svg></span>
+
+            </a>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
 </body>
+
 </html>
