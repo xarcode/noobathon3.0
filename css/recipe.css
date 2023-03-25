@@ -181,10 +181,11 @@ hr{
     height: 25px;
 }
 
-.modeltop{
+.modeltop {
     display: flex;
     justify-content: space-between;
 }
+
 .modal {
     display: none;
     /* Hidden by default */
@@ -231,3 +232,4 @@ hr{
     text-decoration: none;
     cursor: pointer;
 }
+

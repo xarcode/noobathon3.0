@@ -1,37 +1,410 @@
-body{
-    margin-top: 100px;
+@font-face {
+    font-family: 'Grotesk';
+    /*a name to be used later*/
+    src: url('../assets/fonts/Roc_Grotesk/Roc_Grotesk/Roc Grotesk Complete Family/Kostic\ -\ Roc\ Grotesk\ Bold.otf');
+    /*URL to font*/
 }
 
-.hero-section{
+@font-face {
+    font-family: 'Tanseek';
+    /*a name to be used later*/
+    src: url('../assets/fonts/tanseek-modern-pro-arabic-medium-maisfontes.bfa5/tanseek-modern-pro-arabic-medium.ttf');
+    /*URL to font*/
+}
+
+@font-face {
+    font-family: 'Graphik';
+    /*a name to be used later*/
+    src: url('../assets/fonts/Graphik_Collection/Graphik Compact Family/GraphikCompact-Bold-Trial.otf');
+    /*URL to font*/
+}
+
+@font-face {
+    font-family: 'DistanceRider';
+    /*a name to be used later*/
+    src: url('../assets/fonts/distance-rider-font/DistanceriderdemoRegular-yvWm.ttf');
+    /*URL to font*/
+}
+
+
+body {
+    margin-top: 11vh;
+}
+
+.hero-section {
     display: flex;
     justify-content: space-between;
     width: 95%;
     margin: auto;
     align-items: center;
-    height: 50vh;
+    height: 85vh;
+    margin-top: 90px;
 }
 
-.hero-textcontent{
-
+.hero-textcontent {
+    /* margin-top: 15vh; */
+    margin-left: 4vw;
 }
 
-.hero-title{
+.hero-title {
     text-transform: uppercase;
-    font-size: 60px;
+    font-family: 'Grotesk';
+    font-size: 4.3em;
+    line-height: .8em;
 }
 
-.hero-subtitle{
-
+.hero-subtitle {
+    font-family: 'DistanceRider';
+    margin-top: 2vh;
+    font-size: large;
 }
 
-.hero-image-section{
+.hero-section .button {
+    font-family: 'Graphik';
+    display: block;
+    font-size: 1.4em;
+    text-align: center;
+    width: 10em;
+    background-color: #e2cc04;
+    padding: .8em .2em;
+    border-radius: 3rem;
+    margin-top: 2em;
+}
+
+.hero-section .button:hover {
+    cursor: pointer;
+}
+
+.hero-image-section {
     position: relative;
     z-index: -1;
 }
 
-.hero-image{
-    /* position: absolute; */
-    margin-right: 50px;
-    margin-top: 300px;
+.hero-image {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 0;
+    left: -50%;
+    /* margin-right: 9vw; */
+    /* margin-top: 300px; */
     height: 500px;
+}
+
+.burst{
+    transform: translate(-50%, -50%);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 100%;
+    height: 100%;
+}
+
+.rotd {
+    /* height: 50vh; */
+}
+
+.rotd-heading {
+    font-family: 'Grotesk';
+    text-align: center;
+    margin-bottom: 3em;
+}
+
+.rotd-heading h1{
+    font-size: 4.5em;
+}
+.recipe-btn-div, .recipe-img-div, .recipe-txt-div{
+    
+    height: 90vh;
+    display: inline-block;
+}
+
+.main-img{
+    margin: auto;
+    margin-top: 100px;
+    height: 55vh;
+    width: 85%;
+    /* background-color: #735e63; */
+    border-radius: 50px;
+    position: relative;
+}
+.main-img-leftbtn{
+    height: 25%;
+    width: 60%;
+    background-color: #872f45;
+    position: absolute;
+    bottom: -5%;
+    border-radius: 50px;
+}
+.main-img-rightbtn{
+    height: 25%;
+    width: 25%;
+    background-color: #872f45;
+    position: absolute;
+    bottom: -5%;
+    right: 0;
+    border-radius: 50px;
+}
+.main-img img{
+    width: 100%;
+    position: absolute;
+    top: -20%;
+    
+}
+.img-bg{
+    background-color: #872f45;
+    width: 350px;
+    height: 60vh;
+    z-index: -1;
+    
+}
+
+.main-img .main-img-leftbtn .img-btn{
+    margin: 22px 0 0 15px;
+    height: 60px;
+    width: 220px;
+    background-color: none;
+    border-radius: 50px;
+    cursor: pointer;
+    border: 2px solid white;
+    background-color: white;
+
+    color: #591B2A;
+    font-size: 1.5em;
+    font-weight: 800;
+}
+
+.main-img .main-img-rightbtn .img-btn{
+    margin: 12px 0 0 18px;
+    height: 72px;
+    width: 72px;
+    background-color: none;
+    border-radius: 50px;
+    cursor: pointer;
+    border: 2px solid white;
+    background-color: white;
+
+    color: #591B2A;
+    font-size: 1.5em;
+    font-weight: 800;
+}
+
+/* Recipe Text */
+.recipe-txt-div{
+}   
+.recipe-txt{
+    margin: 100px 0 0 100px;
+}
+.recipe-txt h1{
+    font-size: 50px;
+    font-weight: 700;
+}
+.recipe-txt p{
+    margin: 10px 0;
+}
+.recipe-txt h6{
+    font-weight: 700;
+}
+hr{
+    width: 60%;
+}
+.recipe-description{
+    width: 60%;
+}
+.desc-btn {
+    margin: 30px 0 0 0px;
+    height: 70px;
+    width: 300px;
+    background-color: none;
+    border-radius: 50px;
+    cursor: pointer;
+    border: 2px solid #872f45;
+    background-color: transparent;
+    font-family: 'Graphik';
+
+    color: #591B2A;
+    font-size: 1.5em;
+    font-weight: 800;
+}
+
+/* Ingredient text*/
+.ingredient-txt{
+    margin: 50px 0 0 50px;
+}
+
+/* NUTRITIONAL VALUE CSS */
+.recipe-nval-div{
+    margin: auto;
+    display: flex;
+    /* bottom: 80px; */
+    width: 400px;
+    justify-content: space-around;
+}
+
+.row>*{
+    width: 90px;
+}
+
+.nval-div{
+    width: 90px;
+    height: 90px;
+    margin-top: 30px;
+    border-radius: 100%;
+    background-color: black;
+    color: white;
+}
+
+.nval-div h6{
+    text-align: center;
+    margin-top: 26px;
+    font-size: 15px;
+}
+
+ /* Recipe Button Div*/ 
+.recipe-btn-div{
+} 
+.ingredient-btn-div{
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    margin-right: 50px;
+    margin-top: 120px;
+}
+.ingredient-btn {
+    margin:auto;
+    height: 70px;
+    width: 300px;
+    background-color: none;
+    border-radius: 50px;
+    cursor: pointer;
+    border: 2px solid #872f45;
+    background-color: transparent;
+
+    color: #591B2A;
+    font-size: 1.5em;
+    font-weight: 800;
+}
+
+.x{
+    width: 100%;
+    height: 25px;
+}
+
+.category-cards {
+    display: flex;
+    width: 70vw;
+    margin: auto;
+    justify-content: space-between;
+    /* margin-bottom: 100px; */
+}
+
+.category-card {
+    position: relative;
+    background-color: rgb(102, 201, 201);
+    border-radius: 10%;
+    width: 19vw;
+}
+
+.card-one {
+    background: linear-gradient(0,#ff9000 70px,#e66d84 100%);;
+}
+
+.card-two {
+    background: linear-gradient(0deg, #ae58ff 80px, #a1d9ff 100%);
+}
+
+.card-three {
+    background: linear-gradient(0deg, #a76e34 80px, #895edd 100%);
+}
+
+.category-card h1 {
+    text-align: center;
+    
+}
+
+.category-card img {
+    position: relative;
+    height: 250px;
+    transform: translateX(-50%);
+    top: -15%;
+    left: 50%;
+}
+
+.category-card .button {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    text-decoration: none;
+    position: relative;
+    transform: translateX(-50%);
+    top: 4%;
+    left: 50%;
+    border-radius: 62px;
+    font-size: 18px;
+    padding: 1.4rem 1.5rem;
+    letter-spacing: 0px;
+    font-weight: 700;
+    text-transform: uppercase;
+    background-color: #450073;
+    color: #fff;
+}
+
+.card-one .button {
+    border: 9px #ff9000 solid !important;
+}
+.card-two .button {
+    border: 9px #ae58ff solid !important;
+}
+.card-three .button {
+    border: 9px #a76e34 solid !important;
+}
+
+.food-type-cards{
+    width: 80vw;
+    margin: auto;
+    margin-top: 100px;
+}
+
+.food-type-card{
+    border-radius: 2.5em;
+    position: relative;
+}
+
+.food-type-card-one{
+    background: linear-gradient(0deg, #02e088 80px, #c9ff57 100%);
+}
+.food-type-card-two{
+    background: linear-gradient(0,#ff9000 70px,#e66d84 100%);
+}
+
+.food-type-info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.food-type-text{
+    padding: 2.5em;
+}
+
+.food-type-text h1{
+    font-size: 4em;
+}
+
+.food-type-card .button{
+    display: flex;
+    justify-content: space-between;
+    width: 20%;
+    text-decoration: none;
+    position: absolute;
+    transform: translateX(-50%);
+    top: 85%;
+    left: 15%;
+    border-radius: 62px;
+    font-size: 18px;
+    padding: 1.4rem 1.5rem;
+    letter-spacing: 0px;
+    font-weight: 700;
+    text-transform: uppercase;
+    background-color: #450073;
+    color: #fff;
 }

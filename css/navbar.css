@@ -1,5 +1,20 @@
-.navbar {
+@font-face {
+    font-family: 'Graphik';
+    /*a name to be used later*/
+    src: url('../assets/fonts/Graphik_Collection/Graphik Compact Family/GraphikCompact-Bold-Trial.otf');
+    /*URL to font*/
+}
+
+@font-face {
+    font-family: 'DistanceRider';
+    /*a name to be used later*/
+    src: url('../assets/fonts/distance-rider-font/DistanceriderdemoRegular-yvWm.ttf');
+    /*URL to font*/
+}
+
+.custom-navbar {
     position: fixed;
+    z-index: 10;
     /* top: 50%; */
     left: 50%;
     top: 15px;
@@ -14,10 +29,13 @@
 }
 
 .nav-left {
+    font-family: 'Graphik';
+    font-size: 1.5em;
     text-transform: uppercase;
 }
 
 .nav-left a {
+    font-family: 'Graphik';
     margin-left: 10px;
     text-decoration: none;
     color: green;
@@ -25,6 +43,7 @@
 }
 
 .nav-center a {
+    font-family: 'DistanceRider';
     font-size: 28px;
     text-decoration: none;
     color: black;
@@ -32,6 +51,8 @@
 
 .nav-right {
     text-transform: uppercase;
+    font-family: 'Graphik';
+    font-size: 1.5em;
 }
 
 .nav-right a {
