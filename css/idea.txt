@@ -1,0 +1,20 @@
+The problem statement highlights the need for a recipe website that is user-friendly and tailored to individual preferences. 
+The website should offer a variety of recipes with clear instructions, nutritional information, and a timer feature.
+Overall, the aim is to create an easy-to-use platform that enhances users' cooking experience,
+regardless of their skill level, and makes cooking a more enjoyable activity.
+
+We implemented a home page, recipe collection page, and recipe page on the website. 
+The home page provided an overview of the website's offerings, 
+while the recipe collection page displayed a collection of recipes with filtering options.
+ The recipe page provided detailed instructions, an ingredient list, nutritional information, 
+ and features such as a timer, rating/review system, and social media sharing buttons. 
+ The website was also designed with some level of responsiveness to ensure accessibility on different devices.
+
+
+ what you could potentially plan to implement:
+
+Search functionality: We will implement search options that allow users to filter recipes by ingredients, and other criteria.
+
+Video tutorials: We are trying to add video tutorials for the recipes, providing users with a more immersive cooking experience.
+
+Step-by-step Guide: Every recipe will have step by step guide with timer to improve user experience.

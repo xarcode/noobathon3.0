@@ -1,3 +1,5 @@
+
+
 h2, h3,h4, h5,h6 p{
     margin: 0;
     padding: 0;
@@ -16,20 +18,88 @@ h2, h3,h4, h5,h6 p{
 .main-img{
     margin: auto;
     margin-top: 100px;
-    background-color: black;
-    text-align: center;
-    height: 60vh;
-    width: 70%;
+    height: 55vh;
+    width: 85%;
+    background-color: #872f45;
+    border-radius: 50px;
+    position: relative;
+}
+.main-img-leftbtn{
+    height: 25%;
+    width: 60%;
+    background-color: #872f45;
+    position: absolute;
+    bottom: -5%;
+    border-radius: 50px;
+}
+.main-img-rightbtn{
+    height: 25%;
+    width: 25%;
+    background-color: #872f45;
+    position: absolute;
+    bottom: -5%;
+    right: 0;
+    border-radius: 50px;
 }
 .main-img img{
-    width: 110%;
+    width: 100%;
+    position: absolute;
+    top: -20%;
+    
+}
+.img-bg{
+    background-color: #872f45;
+    width: 350px;
+    height: 60vh;
+    z-index: -1;
+    
+}
+
+.main-img .main-img-leftbtn .img-btn{
+    margin: 22px 0 0 15px;
+    height: 60px;
+    width: 220px;
+    background-color: none;
+    border-radius: 50px;
+    cursor: pointer;
+    border: 2px solid white;
+    background-color: white;
+
+    color: #591B2A;
+    font-size: 1.5em;
+    font-weight: 800;
+}
+
+.main-img .main-img-rightbtn .img-btn{
+    margin: 12px 0 0 18px;
+    height: 72px;
+    width: 72px;
+    background-color: none;
+    border-radius: 50px;
+    cursor: pointer;
+    border: 2px solid white;
+    background-color: white;
+
+    color: #591B2A;
+    font-size: 1.5em;
+    font-weight: 800;
 }
 
 /* Recipe Text */
 .recipe-txt-div{
 }   
 .recipe-txt{
-    margin: 100px 0 0 130px;
+    margin: 100px 0 0 100px;
+}
+.recipe-txt h1{
+    font-size: 50px;
+    font-weight: 700;
+}
+.recipe-txt p{
+    margin: 10px 0;
+}
+.recipe-txt h6{
+    font-weight: 700;
 }
 hr{
     width: 60%;
@@ -38,7 +108,7 @@ hr{
     width: 60%;
 }
 .desc-btn {
-    margin: 20px 0 0 0px;
+    margin: 30px 0 0 0px;
     height: 70px;
     width: 300px;
     background-color: none;
@@ -60,19 +130,25 @@ hr{
 /* NUTRITIONAL VALUE CSS */
 .recipe-nval-div{
     margin: auto;
-    position: absolute;
     display: flex;
-    bottom: 80px;
-    width: 32%;
-    height: 15vh;
+    /* bottom: 80px; */
+    width: 400px;
     justify-content: space-around;
 }
 
 .nval-div{
-    width: 100px;
-    height: 100px;
+    width: 90px;
+    height: 90px;
+    margin-top: 30px;
     border-radius: 100%;
     background-color: black;
+    color: white;
+}
+
+.nval-div h6{
+    text-align: center;
+    margin-top: 26px;
+    font-size: 15px;
 }
 
  /* Recipe Button Div*/ 
@@ -80,9 +156,13 @@ hr{
 } 
 .ingredient-btn-div{
     margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    margin-right: 50px;
+    margin-top: 120px;
 }
 .ingredient-btn {
-    margin: 50px 0 0 50px;
+    margin:auto;
     height: 70px;
     width: 300px;
     background-color: none;
@@ -94,4 +174,9 @@ hr{
     color: #591B2A;
     font-size: 1.5em;
     font-weight: 800;
+}
+
+.x{
+    width: 100%;
+    height: 25px;
 }
