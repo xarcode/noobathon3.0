@@ -14,11 +14,12 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
         crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="../css/navbar.css">
-    <link rel="stylesheet" href="../css/index.css">
-    <link rel="stylesheet" href="../css/reset.css">
-    <link rel="stylesheet" href="../css/recipe.css">
-    <link rel="shortcut icon" href="../assets/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="../../css/navbar.css">
+    <link rel="stylesheet" href="../../css/index.css">
+    <link rel="stylesheet" href="../../css/reset.css">
+    <link rel="stylesheet" href="../../css/recipe.css">
+    <link rel="shortcut icon" href="../../assets/favicon.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/c918b29de7.js" crossorigin="anonymous"></script>
 
 </head>
 
@@ -28,15 +29,15 @@
     <nav class="custom-navbar">
         <div class="nav-left">
             <a href="./recipe.html">Recipes</a>
-            <a href="./recommend.html">Recommend</a>
+            <a href="../recommend.html">Recommend</a>
         </div>
         <div class="nav-center">
-            <a href="./index.html">
+            <a href="../index.html">
                 <h1>DishDash</h1>
             </a>
         </div>
         <div class="nav-right">
-            <a href="./favourites.html">Fav</a>
+            <a href="../favourites.html">Fav</a>
             <a href="" id="search">Search</a>
         </div>
     </nav>
@@ -47,14 +48,14 @@
         <!-- Recipe text -->
         <div class="recipe-txt-div col sm-12 md-12 lg-4">
             <div class="recipe-txt">
-                <h5>Italian Cuisine</h5>
-                <h1>Fiorentina Steak</h1>
-                <h6>Main Ingredient - Chicken, Brocolli, Nuts</h6>
+                <h5>Breakfast</h5>
+                <h1>Oat Meal</h1>
+                <h6>Main Ingredient - Oats, Milk</h6>
                 <p>⭐ ⭐ ⭐ ⭐ ⭐ Rating</p>
                 <div class="extras">
 
                     <div class="timer">
-                        30 Mins
+                        8-9 Mins
                     </div>
                     <div class="difficulty">
                         Easy to Cook
@@ -69,10 +70,12 @@
                     <!-- Modal content -->
                     <div class="modal-content">
                         <div class="modeltop">
-                            <h1>Topic Head</h1>
+                            <h1>Description : </h1>
                             <span class="close"><i class="fa-solid fa-xmark" style="color: #000000;"></i></span>
                         </div>
-                        <p>Some text in the Modal..</p>
+                        <p>Oatmeal is a warm and comforting breakfast option that is made from rolled or steel-cut oats, water or milk, and
+                        optional flavorings like cinnamon and sweeteners like honey or maple syrup. Oatmeal is a great source of fiber and can
+                        be customized with your favorite toppings like fresh fruit, nuts, or seeds.</p>
                     </div>
 
                 </div>
@@ -84,26 +87,27 @@
             <!--MAIN RECIPE IMAGE -->
             <div class="recipe-img">
                 <div class="main-img">
-                    <img src="../assets/Main.png">
+                    <img src="../../assets/Main.png">
                     <div class="main-img-leftbtn">
-                        <button class="img-btn" id="myBtn2">Check Tutorial</button>
+                        <button class="img-btn" id="myBtn2">Watch Tutorial</button>
                         <div id="myModal2" class="modal">
 
                             <!-- Modal content -->
                             <div class="modal-content">
                                 <div class="modeltop">
-                                    <h1> Tutorial</h1>
+                                    <h1> Tutorial : </h1>
                                     <span class="close"><i class="fa-solid fa-xmark" style="color: #000000;"></i></span>
                                 </div>
-                                <p>Some text in the Modal..</p>
-                                <iframe width="100%" height="500px" src="https://www.youtube.com/embed/tgbNymZ7vqY">
+                                <p></p>
+                                <iframe width="100%" height="500px" src="https://www.youtube.com/embed/VZOHHCosuzY">
                                 </iframe>
                             </div>
 
                         </div>
                     </div>
                     <div class="main-img-rightbtn">
-                        <button class="img-btn" id="myBtn3">Play</button>
+                        <button class="img-btn" id="myBtn3">Play
+                        </button>
                         <div id="myModal3" class="modal" height="100vh">
 
                             <!-- Modal content -->
@@ -112,8 +116,11 @@
                                     <h1> Play Carousel</h1>
                                     <span class="close"><i class="fa-solid fa-xmark" style="color: #000000;"></i></span>
                                 </div>
-                                <p>Some text in the Modal..</p>
-                                <iframe src="../html/carousel.html" height="400px"></iframe>
+                                <p>Follow the Step by Step process !</p>
+                                <p>
+                                    Note : hover on the current frame to pause !
+                                </p>
+                                <iframe src="../carousel/bf3carousel.html" height="400px"></iframe>
                             </div>
 
 
@@ -136,22 +143,29 @@
                     <!-- Modal content -->
                     <div class="modal-content">
                         <div class="modeltop">
-                            <h1> Ingredients</h1>
+                            <h1> Ingredients : </h1>
                             <span class="close"><i class="fa-solid fa-xmark" style="color: #000000;"></i></span>
                         </div>
-                        <p>Some text in the Modal..</p>
+                        <p></p>
+                        <ul>
+                            <li>1/2 cup rolled oats</li>
+                            <li>1 cup water or milk (dairy or non-dairy)</li>
+                            <li>1/4 tsp cinnamon (optional)</li>
+                            <li>1 tbsp honey or maple syrup (optional)</li>
+                            <li>Toppings of your choice: sliced banana, berries, nuts, seeds, etc</li>
+                        </ul>
                     </div>
 
                 </div>
                 <div class="recipe-nval-div row">
                     <div class="nval-div ">
-                        <h6>Fats<br>12.4%</h6>
+                        <h6>Fats<br>2gms</h6>
                     </div>
                     <div class="nval-div ">
-                        <h6>Calorie<br>800cal</h6>
+                        <h6>Calorie<br>150cal</h6>
                     </div>
                     <div class="nval-div ">
-                        <h6>Carbs<br>200gms</h6>
+                        <h6>Carbs<br>27gms</h6>
                     </div>
                 </div>
 
