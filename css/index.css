@@ -538,3 +538,17 @@ hr{
     font-size: 20px;
     font-weight: 800;
 }
+
+.search-btn {
+    height: 70px;
+    width: 150px;
+    background-color: none;
+    border-radius: 50px;
+    cursor: pointer;
+    border: 2px solid #235720;
+    background-color: #43803f;
+    margin: 25px 0 10px 275px;
+    color: #fff8d3;
+    font-size: 20px;
+    font-weight: 800;
+}
