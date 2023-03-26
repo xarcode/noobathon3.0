@@ -11,6 +11,14 @@
         crossorigin="anonymous"></script>
     <title>Document</title>
     <style>
+        body{
+            background-color: #ffeb9c;
+        }
+        .caro-btn{
+            margin: 0 -50px;
+            overflow: hidden;
+            font-weight: 900;
+        }
         .container{
             margin: 0;
             padding: 0;
@@ -20,19 +28,26 @@
             top: 50%;
             left: 50%;
             transform: translate(-50%,-50%);
-            width: 800px;
+            width: 100%;
             /* height: 700px; */
+        }
+        .container li, p{
+            font-weight: 600;
         }
         .smallcontainer{
             display: flex;
             /* justify-content: space-between; */
-
+            height: 100%;
         }
         .carousel-item{
-            background-color: yellow;
+            background-color: #ffeb9c;
         }
         .imge{
-            margin-right: 50px;
+            margin-right: 0px;
+        }
+        .imge img{
+            border-radius: 100%;
+            padding: 50px;
         }
         .description{
             display: flex;
@@ -40,8 +55,14 @@
             flex-direction: column;
             justify-content: space-around;
         }
-        .remaintime{
+        .smallcontainer .description{
             margin-top: 50px;
+        }
+        .remaintime{
+            color: #235720;
+            font-size: 18px;
+            text-decoration: underline;
+            margin-top: 20px;
             text-align: end;
         }
     </style>

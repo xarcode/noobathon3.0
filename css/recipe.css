@@ -1,6 +1,7 @@
 body{
     background-image: linear-gradient( #fff7da, #fffcf0);
     overflow: hidden;
+    font-family: "Grotesk";
 }
 
 h2, h3,h4, h5,h6 p{
@@ -23,6 +24,28 @@ h2, h3,h4, h5,h6 p{
     background: linear-gradient(0,#ff9000 70px,#e66d84 100%);
     border-radius: 50px;
     position: relative;
+}
+
+.caro{
+    margin: auto;
+    margin-top: 90px;
+    width: 70%;
+    height: 80%;
+    border-radius: 10px;
+    z-index: 10;
+}
+.caro h1{
+    margin-left:  250px;
+}
+.caro p{
+    margin: 0 0 0 55px;
+    padding-bottom: 10px;
+}
+.caro iframe{
+    width: 80%;
+    margin: auto;
+    background-color: aqua !important;
+    padding: 0;
 }
 
 .buy-btn {
@@ -256,12 +279,18 @@ hr{
     margin: auto;
     
   }
-  .modal-content p {
+  .modal-content p{
     padding: 0 50px 30px 50px;
     text-align: justify;
   }
+  .modal-content li{
+    font-weight: 700;
+    text-align: justify;
+  }
+
   .modal-content h1{
     color: #235720;
+    margin-bottom: 10px;
   }
   .modal-content i{
     margin-left: 250px;

@@ -20,15 +20,40 @@
     <link rel="stylesheet" href="../../css/recipe.css">
     <link rel="shortcut icon" href="../../assets/favicon.png" type="image/x-icon">
     <script src="https://kit.fontawesome.com/c918b29de7.js" crossorigin="anonymous"></script>
+    <style>
+        .caro {
+            margin: auto;
+            margin-top: 90px;
+            width: 70%;
+            height: 80%;
+            border-radius: 10px;
+            z-index: 10;
+        }
 
+        .caro h1 {
+            margin-left: 250px;
+        }
+
+        .caro p {
+            margin: 0 0 0 55px;
+            padding-bottom: 10px;
+        }
+
+        .caro iframe {
+            width: 80%;
+            margin: auto;
+            background-color: aqua !important;
+            padding: 0;
+        }
+    </style>
 </head>
 
 <body>
 
     <!-- HEADER SECTION -->
-    <nav class="custom-navbar">
+    <nav class="custom-navbar" style="z-index: -1;">
         <div class="nav-left">
-            <a href="./Recipes.html">Recipes</a>
+            <a href="../Recipes.html">Recipes</a>
             <a href="">Recommend</a>
         </div>
         <div class="nav-center">
@@ -38,7 +63,7 @@
         </div>
         <div class="nav-right">
             <a href=""><i class="fa-solid fa-heart" style="font-weight: bold; color: #fdd849;"></i></a>
-            <button id="myBtn" style="background: none; border: 0; font-weight: bold; color: #fdd849;"><i
+            <button style="background: none; border: 0; font-weight: bold; color: #fdd849;"><i
                     class="fa-solid fa-magnifying-glass"></i></button>
 
         </div>
@@ -113,7 +138,7 @@
                         <div id="myModal3" class="modal" height="100vh">
 
                             <!-- Modal content -->
-                            <div class="modal-content">
+                            <div class="modal-content caro">
                                 <div class="modeltop">
                                     <h1> Play Carousel</h1>
                                     <span class="close"><i class="fa-solid fa-xmark" style="color: #000000;"></i></span>
