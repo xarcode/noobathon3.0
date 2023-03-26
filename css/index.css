@@ -436,12 +436,13 @@ hr{
 }
 
 .food-type-cards{
-    width: 80vw;
+    width: 75vw;
     margin: auto;
     margin-top: 100px;
 }
 
 .food-type-card{
+    margin-bottom: 5em;
     border-radius: 2.5em;
     position: relative;
 }
@@ -457,6 +458,14 @@ hr{
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.food-type-card:hover{
+    
+}
+
+.food-type-info img{
+    height: 25em;
 }
 
 .food-type-text{
