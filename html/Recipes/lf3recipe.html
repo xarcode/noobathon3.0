@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/c918b29de7.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../../css/navbar.css">
+    <link rel="stylesheet" href="../../css/index.css">
+    <link rel="stylesheet" href="../../css/reset.css">
+    <link rel="stylesheet" href="../../css/recipe.css">
+    <link rel="shortcut icon" href="../../assets/favicon.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/c918b29de7.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+    <!-- HEADER SECTION -->
+    <nav class="custom-navbar">
+        <div class="nav-left">
+            <a href="./recipe.html">Recipes</a>
+            <a href="../recommend.html">Recommend</a>
+        </div>
+        <div class="nav-center">
+            <a href="../index.html">
+                <h1>DishDash</h1>
+            </a>
+        </div>
+        <div class="nav-right">
+            <a href="../favourites.html">Fav</a>
+            <a href="" id="search">Search</a>
+        </div>
+    </nav>
+    <div class="x"></div>
+    <!-- RECIPE HERO SECTION -->
+    <section class="row">
+
+        <!-- Recipe text -->
+        <div class="recipe-txt-div col sm-12 md-12 lg-4">
+            <div class="recipe-txt">
+                <h5>Breakfast</h5>
+                <h1>Oat Meal</h1>
+                <h6>Main Ingredient - Oats, Milk</h6>
+                <p>⭐ ⭐ ⭐ ⭐ ⭐ Rating</p>
+                <div class="extras">
+
+                    <div class="timer">
+                        8-9 Mins
+                    </div>
+                    <div class="difficulty">
+                        Easy to Cook
+                    </div>
+
+                </div>
+
+                <button class="desc-btn" id="myBtn">Description</button>
+                <button class="buy-btn" id="myBtn">Order Groceries!</button>
+                <div id="myModal" class="modal">
+
+                    <!-- Modal content -->
+                    <div class="modal-content">
+                        <div class="modeltop">
+                            <h1>Description : </h1>
+                            <span class="close"><i class="fa-solid fa-xmark" style="color: #000000;"></i></span>
+                        </div>
+                        <p>Oatmeal is a warm and comforting breakfast option that is made from rolled or steel-cut oats, water or milk, and
+                        optional flavorings like cinnamon and sweeteners like honey or maple syrup. Oatmeal is a great source of fiber and can
+                        be customized with your favorite toppings like fresh fruit, nuts, or seeds.</p>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+        <div class="recipe-img-div col sm-12 md-12 lg-4">
+
+            <!--MAIN RECIPE IMAGE -->
+            <div class="recipe-img">
+                <div class="main-img">
+                    <img src="../../assets/food_images/oatmeal-removebg-preview.png" style="scale: 1.1;">
+                    <div class="main-img-leftbtn">
+                        <button class="img-btn" id="myBtn2">Watch Tutorial</button>
+                        <div id="myModal2" class="modal">
+
+                            <!-- Modal content -->
+                            <div class="modal-content">
+                                <div class="modeltop">
+                                    <h1> Tutorial : </h1>
+                                    <span class="close"><i class="fa-solid fa-xmark" style="color: #000000;"></i></span>
+                                </div>
+                                <p></p>
+                                <iframe width="100%" height="500px" src="https://www.youtube.com/embed/VZOHHCosuzY">
+                                </iframe>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="main-img-rightbtn">
+                        <button class="img-btn" id="myBtn3">Play
+                        </button>
+                        <div id="myModal3" class="modal" height="100vh">
+
+                            <!-- Modal content -->
+                            <div class="modal-content">
+                                <div class="modeltop">
+                                    <h1> Play Carousel</h1>
+                                    <span class="close"><i class="fa-solid fa-xmark" style="color: #000000;"></i></span>
+                                </div>
+                                <p>Follow the Step by Step process !</p>
+                                <p>
+                                    Note : hover on the current frame to pause !
+                                </p>
+                                <iframe src="../carousel/bf3carousel.html" height="400px"></iframe>
+                            </div>
+
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+
+        </div>
+        <div class="recipe-btn-div col sm-12 md-12 lg-4">
+            <div class="ingredient-btn-div">
+                <button class="ingredient-btn" id="myBtn4">Ingredient</button><br>
+                <div id="myModal4" class="modal">
+
+                    <!-- Modal content -->
+                    <div class="modal-content">
+                        <div class="modeltop">
+                            <h1> Ingredients : </h1>
+                            <span class="close"><i class="fa-solid fa-xmark" style="color: #000000;"></i></span>
+                        </div>
+                        <p></p>
+                        <ul>
+                            <li>1/2 cup rolled oats</li>
+                            <li>1 cup water or milk (dairy or non-dairy)</li>
+                            <li>1/4 tsp cinnamon (optional)</li>
+                            <li>1 tbsp honey or maple syrup (optional)</li>
+                            <li>Toppings of your choice: sliced banana, berries, nuts, seeds, etc</li>
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="recipe-nval-div row">
+                    <div class="nval-div ">
+                        <h6>Fats<br>2gms</h6>
+                    </div>
+                    <div class="nval-div ">
+                        <h6>Calorie<br>150cal</h6>
+                    </div>
+                    <div class="nval-div ">
+                        <h6>Carbs<br>27gms</h6>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+    <!-- FOOTER SECTION -->
+    <footer>
+        <div>
+
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+        crossorigin="anonymous"></script>
+    <script>
+
+        // Get the modal
+        var modal = document.getElementById("myModal");
+        var modal2 = document.getElementById("myModal2");
+        var modal3 = document.getElementById("myModal3");
+        var modal4 = document.getElementById("myModal4");
+
+        // Get the button that opens the modal
+        var btn = document.getElementById("myBtn");
+        var btn2 = document.getElementById("myBtn2");
+        var btn3 = document.getElementById("myBtn3");
+        var btn4 = document.getElementById("myBtn4");
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+        var span2 = document.getElementsByClassName("close")[1];
+        var span3 = document.getElementsByClassName("close")[2];
+        var span4 = document.getElementsByClassName("close")[3];
+
+        // When the user clicks on the button, open the modal
+        btn.onclick = function () {
+            modal.style.display = "block";
+        }
+        btn2.onclick = function () {
+            modal2.style.display = "block";
+        }
+        btn3.onclick = function () {
+            modal3.style.display = "block";
+        }
+        btn4.onclick = function () {
+            modal4.style.display = "block";
+        }
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function () {
+            modal.style.display = "none";
+        }
+        span2.onclick = function () {
+            modal2.style.display = "none";
+        }
+        span3.onclick = function () {
+            modal3.style.display = "none";
+        }
+        span4.onclick = function () {
+            modal4.style.display = "none";
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+            if (event.target == modal2) {
+                modal2.style.display = "none";
+            }
+            if (event.target == modal3) {
+                modal3.style.display = "none";
+            }
+            if (event.target == modal4) {
+                modal4.style.display = "none";
+            }
+        }
+
+    </script>
+</body>
+
+</html>
