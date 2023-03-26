@@ -60,6 +60,7 @@ body {
 }
 
 .hero-title {
+    color: #fffbfb;
     text-transform: uppercase;
     font-family: 'Grotesk';
     font-size: 4.3em;
@@ -67,6 +68,7 @@ body {
 }
 
 .hero-subtitle {
+    color: #fffbfb;
     font-family: 'DistanceRider';
     margin-top: 2vh;
     font-size: large;
@@ -211,11 +213,13 @@ body {
 
 /* Recipe Text */
 .recipe-txt-div{
+    font-family: 'Grotesk';
 }   
 .recipe-txt{
     margin: 100px 0 0 100px;
 }
 .recipe-txt h1{
+    font-family: 'Tanseek';
     font-size: 50px;
     font-weight: 700;
 }
@@ -320,6 +324,11 @@ hr{
 
 
 .category-card {
+    font-family: 'Grotesk';
+    font-weight: bold;
+    /* font-size: 1em; */
+    font-size: small;
+    color: white;
     position: relative;
     background-color: rgb(102, 201, 201);
     border-radius: 10%;
@@ -401,6 +410,7 @@ hr{
 
 .category-card .button {
     transition: .3s;
+    font-family: 'Grotesk';
     display: flex;
     justify-content: space-between;
     width: 70%;
@@ -461,7 +471,7 @@ hr{
 }
 
 .food-type-card:hover{
-    
+
 }
 
 .food-type-info img{
@@ -469,11 +479,20 @@ hr{
 }
 
 .food-type-text{
-    padding: 2.5em;
+    padding: 2em 4em;
+}
+
+.food-type-text p{
+    font-family: 'Graphik';
+    font-size: 1em;
+    line-height: 1.2em;
+    color: rgb(255, 242, 242);
 }
 
 .food-type-text h1{
-    font-size: 4em;
+    font-family: 'Grotesk';
+    font-size: 3em;
+    color: white;
 }
 
 .food-type-card .button{

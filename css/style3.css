@@ -1,8 +1,65 @@
+body{
+    background-image: linear-gradient( #fff7da, #fffcf0);
+}
+
+
+.centerleaf{
+    position: absolute;
+    width: 25rem;
+    top: 55rem;
+    left: 4rem;
+    z-index: -1;
+    transform: rotate(40deg);
+}
+
+.left-hero-leaf{
+    position: absolute;
+    width: 40rem;
+    top: 15rem;
+    right: -16rem;
+    z-index: -1;
+    transform: rotate(-90deg);
+}
+
+.berry-top{
+    position: absolute;
+    width: 150px;
+    top: 9rem;
+    right: 0rem;
+    z-index: -1;
+    transform: rotate(-40deg);
+}
+
+.brocolli-top{
+    position: absolute;
+    width: 250px;
+    top: 12rem;
+    left:-100px;
+    z-index: -1;
+    transform: rotate(180deg);
+}
+
+
+.mainpanel h1{
+    font-family: 'Graphik';
+    color: rgb(74, 74, 74);
+}
+p{
+    margin-left: 5px;
+}
+
+h4{
+    color:#43803f;
+}
+i{
+    color:#fdd849;
+}
 .card{
     padding: 0;
     margin-bottom: 40px;
     /* border: 2px solid rgb(183, 182, 182); */
     box-shadow: inset 0px 0px 0px 0.2px;
+    border-radius: 20px;
 }
 .rowcontainer{
     display: flex;
@@ -13,6 +70,7 @@
 .card-img-top{
     width: 100%;
     height: 200px;
+    border-radius: 15px 15px 0 0;
 }
 .time{
     width: 12px;
@@ -39,8 +97,8 @@ p{
 .container{
     width: 70%;
 }
-.container h1
-{
+.contaienr h1
+{   
     text-align: center;
     margin-bottom: 40px;
 }

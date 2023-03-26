@@ -33,6 +33,7 @@
     font-family: 'Graphik';
     font-size: 1.5em;
     text-transform: uppercase;
+    width: 19%;
 }
 
 .nav-left a {
@@ -48,12 +49,16 @@
     font-size: 28px;
     text-decoration: none;
     color: #fdd849;
+    /* margin-right: 4em; */
 }
 
 .nav-right {
     text-transform: uppercase;
     font-family: 'Graphik';
     font-size: 1.5em;
+    width: 19%;
+    display: flex;
+    justify-content: flex-end;
 }
 
 .nav-right a {

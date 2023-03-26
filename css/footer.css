@@ -18,6 +18,12 @@
     src: url('../assets/fonts/Graphik_Collection/Graphik Compact Family/GraphikCompact-Bold-Trial.otf');
     /*URL to font*/
 }
+@font-face {
+    font-family: 'Moisture';
+    /*a name to be used later*/
+    src: url('../assets/fonts/moisture-modern-elegant-condensed-sans-serif/OpenType-TT/Moisture.ttf');
+    /*URL to font*/
+}
 
 @font-face {
     font-family: 'DistanceRider';
@@ -33,6 +39,7 @@ body {
 }
 
 .footer {
+    font-family: 'Graphik';
     padding-top: 3em;
     height: 80vh;
     background-color: rgb(255, 255, 0);
@@ -46,8 +53,9 @@ body {
 }
 
 .footer h1 {
-    font-family: 'Grotesk';
-    font-size: 5em;
+    font-family: 'Moisture';
+    font-weight: 900;
+    font-size: 7em;
     margin-left: 50px;
     font-size: 70px;
     margin-bottom: .7em;
