@@ -17,8 +17,8 @@ h2, h3,h4, h5,h6 p{
   
 .main-img{
     margin: auto;
-    margin-top: 120px;
-    height: 55vh;
+    margin-top: 110px;
+    height: 58vh;
     width: 85%;
     background: linear-gradient(0,#ff9000 70px,#e66d84 100%);
     border-radius: 50px;
@@ -35,7 +35,7 @@ h2, h3,h4, h5,h6 p{
     border: 2px solid #235720;
     background-color: #43803f;
 
-    color: #ffe877;
+    color: #fff4bd;
     font-size: 1.5em;
     font-weight: 800;
 }
@@ -76,7 +76,7 @@ h2, h3,h4, h5,h6 p{
 }
 
 .main-img .main-img-leftbtn .img-btn{
-    margin: 22px 0 0 15px;
+    margin: 28px 0 0 15px;
     height: 60px;
     width: 220px;
     background-color: none;
@@ -91,9 +91,9 @@ h2, h3,h4, h5,h6 p{
 }
 
 .main-img .main-img-rightbtn .img-btn{
-    margin: 12px 0 0 18px;
-    height: 72px;
-    width: 72px;
+    margin: 15px 0 0 18px;
+    height: 73px;
+    width: 73px;
     background-color: none;
     border-radius: 50px;
     cursor: pointer;
@@ -151,7 +151,7 @@ hr{
 }
 .timer{
     width: 80px;
-    height: 30px;
+    height: 25px;
     background-color:rgb(198, 30, 30);
     text-align:center;
     color: white;
@@ -160,7 +160,7 @@ hr{
 
 .difficulty{
     width: 120px;
-    height: 30px;
+    height: 25px;
     background-color:#2c6587;
     text-align:center;
     color: white;
@@ -245,13 +245,27 @@ hr{
   
   /* Modal Content/Box */
   .modal-content {
-    background-color: #fefefe;
     margin: 15% auto; /* 15% from the top and centered */
     padding: 20px;
     border: 1px solid #888;
-    width: 80%; /* Could be more or less, depending on screen size */
+    width: 40%; /* Could be more or less, depending on screen size */
+    height: 50%;
+    background-color: #ffeb9c;
   }
-  
+  .modeltop{
+    margin: auto;
+    
+  }
+  .modal-content p {
+    padding: 0 50px 30px 50px;
+    text-align: justify;
+  }
+  .modal-content h1{
+    color: #235720;
+  }
+  .modal-content i{
+    margin-left: 250px;
+  }
   /* The Close Button */
   .close {
     color: #aaa;
@@ -269,3 +283,4 @@ hr{
 
 
   
+
