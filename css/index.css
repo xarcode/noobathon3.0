@@ -29,6 +29,19 @@
 
 body {
     margin-top: 11vh;
+    overflow-x: hidden;
+}
+
+/* YELLOW BACKGROUND CODE */
+#bg-gradient{
+    background-image: linear-gradient( #fdd849, #feefa8);
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 0% 100%);
+    margin-top: -15vh;
+    color :rgb(255, 235, 133);
+    position: absolute;
+    z-index: -1;
+    height: 100vh;
+    width: 150%;
 }
 
 .hero-section {
@@ -65,10 +78,11 @@ body {
     font-size: 1.4em;
     text-align: center;
     width: 10em;
-    background-color: #e2cc04;
+    background-color: #43803f;
     padding: .8em .2em;
     border-radius: 3rem;
     margin-top: 2em;
+    color: #ffe877;
 }
 
 .hero-section .button:hover {
@@ -83,13 +97,19 @@ body {
 .hero-image {
     position: absolute;
     transform: translate(-50%, -50%);
-    top: 0;
-    left: -50%;
-    /* margin-right: 9vw; */
-    /* margin-top: 300px; */
+    top: 30px;
+    /* left: 50%; */
+    right: -180px;
     height: 500px;
 }
 
+.hero-arrow{
+    width: 150px;
+    position: absolute;
+    right: 680px;
+    top: -195px;
+    transform: rotate(-20deg);
+}
 .burst{
     transform: translate(-50%, -50%);
     position: absolute;
@@ -101,6 +121,7 @@ body {
 
 .rotd {
     /* height: 50vh; */
+    margin-top: 30px;
 }
 
 .rotd-heading {
@@ -297,13 +318,24 @@ hr{
     /* margin-bottom: 100px; */
 }
 
+
 .category-card {
     position: relative;
     background-color: rgb(102, 201, 201);
     border-radius: 10%;
     width: 19vw;
+    transition: .3s;
 }
 
+.veggie1, .veggie2{
+    /* display: inline; */
+    height: 200px;
+    position: absolute;
+    scale: 0;
+    top: 0;
+    left: 0;
+    transition: .3s;
+}
 .card-one {
     background: linear-gradient(0,#ff9000 70px,#e66d84 100%);;
 }
@@ -321,15 +353,54 @@ hr{
     
 }
 
-.category-card img {
+.category-card .cat-img {
     position: relative;
     height: 250px;
-    transform: translateX(-50%);
+    /* transform: translateX(-50%); */
     top: -15%;
-    left: 50%;
+    left: -11.5%;
+    transition: .3s;
+}
+
+.category-card:hover{
+    cursor: pointer;
+    transition: .3s;
+    scale: .9;
+}
+
+.category-card:hover .veggie1{
+    scale: .8;
+    transition: .3s;
+    left: -60%;
+    top: -40%;
+}
+.category-card:hover .veggie-potato{
+    scale: 1.1;
+}
+.category-card:hover .veggie-onion{
+    scale: .75;
+}
+.category-card:hover .veggie2{
+    scale: 1;
+    transition: .3s;
+    left: 60%;
+    top: -40%;
+}
+
+.lunch-img{
+    margin-left: .8em;
+}
+
+.category-card:hover .cat-img{
+    scale: 1.3;
+    transition: .3s;
+    /* left: 61%; */
+    top: -23%;
+    transform: rotate(6deg);
 }
 
 .category-card .button {
+    transition: .3s;
     display: flex;
     justify-content: space-between;
     width: 70%;
@@ -348,6 +419,12 @@ hr{
     color: #fff;
 }
 
+.category-card:hover .button{
+    scale: 1.09;
+    top: 10%;
+    left: 8.7em;
+    transition: .3s;
+}
 .card-one .button {
     border: 9px #ff9000 solid !important;
 }

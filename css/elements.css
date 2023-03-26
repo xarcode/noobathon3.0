@@ -1,0 +1,42 @@
+.centerleaf{
+    position: absolute;
+    width: 250px;
+    top: 450px;
+    left: 650px;
+    transform: rotate(60deg);
+}
+
+.carrot1{
+    position: absolute;
+    width: 250px;
+    top: 500px;
+    right:-50px;
+    transform: rotate(40deg);  
+}
+
+.left-hero-leaf{
+    position: absolute;
+    width: 320px;
+    top: 580px;
+    left: -50px;
+    transform: rotate(25deg);
+}
+
+.berry-top{
+    position: absolute;
+    width: 150px;
+    top: 120px;
+    right: 5px;
+    transform: rotate(-40deg);
+}
+
+.rotd-bg-parent{
+    position: relative;
+}
+.rotd-bg-element{
+    position: absolute;
+    width: 140px;
+    top: 16em;
+    left: 487px;
+    transform: rotate(-40deg);
+}

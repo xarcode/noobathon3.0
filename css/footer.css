@@ -1,0 +1,150 @@
+@font-face {
+    font-family: 'Grotesk';
+    /*a name to be used later*/
+    src: url('../assets/fonts/Roc_Grotesk/Roc_Grotesk/Roc Grotesk Complete Family/Kostic\ -\ Roc\ Grotesk\ Bold.otf');
+    /*URL to font*/
+}
+
+@font-face {
+    font-family: 'Tanseek';
+    /*a name to be used later*/
+    src: url('../assets/fonts/tanseek-modern-pro-arabic-medium-maisfontes.bfa5/tanseek-modern-pro-arabic-medium.ttf');
+    /*URL to font*/
+}
+
+@font-face {
+    font-family: 'Graphik';
+    /*a name to be used later*/
+    src: url('../assets/fonts/Graphik_Collection/Graphik Compact Family/GraphikCompact-Bold-Trial.otf');
+    /*URL to font*/
+}
+
+@font-face {
+    font-family: 'DistanceRider';
+    /*a name to be used later*/
+    src: url('../assets/fonts/distance-rider-font/DistanceriderdemoRegular-yvWm.ttf');
+    /*URL to font*/
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.footer {
+    padding-top: 3em;
+    height: 80vh;
+    background-color: rgb(255, 255, 0);
+    position: relative;
+    clip-path: polygon(0 15%, 100% 0, 100% 100%, 0% 100%);
+}
+
+.data {
+    padding-top: 100px;
+    color: black;
+}
+
+.footer h1 {
+    font-family: 'Grotesk';
+    font-size: 5em;
+    margin-left: 50px;
+    font-size: 70px;
+    margin-bottom: .7em;
+}
+
+.inpt {
+    display: flex;
+    justify-content: space-around;
+}
+
+input {
+    /* width: 100%; */
+    margin-left: 10px;
+    padding: 20px;
+    border-radius: 30px;
+    font-size: large;
+    border: 1px solid rgb(123, 123, 123);
+    background-color: rgb(255, 255, 211);
+}
+
+input[type='email'] {
+    width: 87%;
+}
+
+input[type='button'] {
+    cursor: pointer;
+}
+
+input:focus {
+    outline: none;
+}
+
+.cpyrght {
+    background-color: rgb(255, 225, 32);
+    position: fixed;
+    left: 10px;
+    bottom: 0px;
+    width: 100%;
+}
+
+.cpyrght p {
+    width: 100%;
+    text-align: center;
+}
+
+.btmline {
+    margin-top: 35px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.one {
+    width: 200px;
+}
+
+.one h2 {
+    font-size: 200%;
+}
+
+.one a {
+    text-decoration: none;
+    color: black;
+}
+
+.social_links i {
+    margin-left: 17px;
+}
+
+.logo {
+    width: 150px;
+    height: 150px;
+    margin-right: 100px;
+}
+
+.up {
+    display: flex;
+    justify-content: space-between;
+}
+
+.rotate {
+    animation: rotation 6s;
+}
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(359deg);
+    }
+}
+
+.linear {
+    animation-timing-function: linear;
+}
+
+.infinite {
+    animation-iteration-count: infinite;
+}
