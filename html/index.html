@@ -11,11 +11,65 @@
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/footer.css">
     <link rel="stylesheet" href="../css/elements.css">
+    <!-- <link rel="stylesheet" href="../css/recipe.css"> -->
     <script src="https://kit.fontawesome.com/c918b29de7.js" crossorigin="anonymous"></script>
     <style>
         body {
             background-color: #f7f1e5;
             height: 100vh;
+        }
+        .searchi input{
+            margin-top: 30px;
+            width: 100%;
+            padding: 20px;
+            border: 1px solid black;
+            border-radius: 30px;
+        }
+        .searchi input:focus{
+            outline: none;
+        }
+        
+        .modeltop{
+            display: flex;
+            justify-content: space-between;
+        }
+        .modal {
+            display: none; /* Hidden by default */
+            position: fixed; /* Stay in place */
+            z-index: 1; /* Sit on top */
+            left: 0;
+            top: 0;
+            width: 700px; /* Full width */
+            height: 100%; /* Full height */
+            overflow: auto; /* Enable scroll if needed */
+            background-color: rgb(0,0,0); /* Fallback color */
+            background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+            /* overflow-y: hidden; */
+            /* margin-top: 100px    ; */
+        }
+        
+        /* Modal Content/Box */
+        .modal-content {
+            background-color: #fefefe;
+            margin: 15% auto; /* 15% from the top and centered */
+            padding: 20px;
+            border: 1px solid #888;
+            width: 10%; /* Could be more or less, depending on screen size */
+        }
+        
+        /* The Close Button */
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+        
+        .close:hover,
+        .close:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
         }
     </style>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
@@ -35,11 +89,29 @@
         </div>
         <div class="nav-right">
             <a href="./favourites.html">Fav</a>
-            <a href="" id="search">Search</a>
+            <button id="myBtn">Search</button>
+            
         </div>
     </nav>
     <!-- ELEMENTS ABSOLUTE -->
     <section>
+        <div id="myModal" class="modal">
+        
+            <!-- Modal content -->
+            <div class="modal-content">
+                <div class="modeltop">
+                    <h1>Topic Head</h1>
+                    <span class="close"><i class="fa-solid fa-xmark" style="color: #000000;"></i></span>
+                </div>
+                <div class="searchi">
+                    <form action="#">
+                        <input type="text" placeholder="Type here . . .">
+                        <input type="button" value="Search !">
+                    </form>
+                </div>
+            </div>
+        
+        </div>
         <div>
             <img src="../assets/Vegetables/leaf3.png" class="centerleaf">
             <img src="../assets/Vegetables/carrot.png" class="carrot1">
@@ -264,6 +336,33 @@
         </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
+    <script>
+        // Get the modal
+        var modal = document.getElementById("myModal");
+
+        // Get the button that opens the modal
+        var btn = document.getElementById("myBtn");
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks the button, open the modal 
+        btn.onclick = function () {
+            modal.style.display = "block";
+        }
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function () {
+            modal.style.display = "none";
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
 </body>
 
 </html>
