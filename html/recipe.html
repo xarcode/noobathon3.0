@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recipe Page</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/c918b29de7.js" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
@@ -16,7 +18,7 @@
     <link rel="stylesheet" href="../css/index.css">
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/recipe.css">
-
+    <link rel="shortcut icon" href="../assets/favicon.png" type="image/x-icon">
 
 </head>
 
@@ -26,7 +28,7 @@
     <nav class="custom-navbar">
         <div class="nav-left">
             <a href="./recipe.html">Recipes</a>
-            <a href="./recommend.html">Recommend</a>  
+            <a href="./recommend.html">Recommend</a>
         </div>
         <div class="nav-center">
             <a href="./index.html">
@@ -48,10 +50,22 @@
                 <h5>Italian Cuisine</h5>
                 <h1>Fiorentina Steak</h1>
                 <h6>Main Ingredient - Chicken, Brocolli, Nuts</h6>
-                <p>⭐ ⭐ ⭐ ⭐ ⭐  Rating</p>
+                <p>⭐ ⭐ ⭐ ⭐ ⭐ Rating</p>
+                <div class="extras">
+
+                    <div class="timer">
+                        30 Mins
+                    </div>
+                    <div class="difficulty">
+                        Easy to Cook
+                    </div>
+
+                </div>
+
                 <button class="desc-btn" id="myBtn">Description</button>
+                <button class="buy-btn" id="myBtn">Order Groceries!</button>
                 <div id="myModal" class="modal">
-                
+
                     <!-- Modal content -->
                     <div class="modal-content">
                         <div class="modeltop">
@@ -60,21 +74,21 @@
                         </div>
                         <p>Some text in the Modal..</p>
                     </div>
-                
+
                 </div>
             </div>
-            
+
         </div>
         <div class="recipe-img-div col sm-12 md-12 lg-4">
 
-             <!--MAIN RECIPE IMAGE -->
+            <!--MAIN RECIPE IMAGE -->
             <div class="recipe-img">
                 <div class="main-img">
                     <img src="../assets/Main.png">
                     <div class="main-img-leftbtn">
                         <button class="img-btn" id="myBtn2">Check Tutorial</button>
                         <div id="myModal2" class="modal">
-                        
+
                             <!-- Modal content -->
                             <div class="modal-content">
                                 <div class="modeltop">
@@ -85,13 +99,13 @@
                                 <iframe width="100%" height="500px" src="https://www.youtube.com/embed/tgbNymZ7vqY">
                                 </iframe>
                             </div>
-                        
+
                         </div>
                     </div>
                     <div class="main-img-rightbtn">
                         <button class="img-btn" id="myBtn3">Play</button>
                         <div id="myModal3" class="modal" height="100vh">
-                        
+
                             <!-- Modal content -->
                             <div class="modal-content">
                                 <div class="modeltop">
@@ -99,26 +113,26 @@
                                     <span class="close"><i class="fa-solid fa-xmark" style="color: #000000;"></i></span>
                                 </div>
                                 <p>Some text in the Modal..</p>
-                                <iframe src="/html/carousel.html" height="400px"></iframe>
+                                <iframe src="../html/carousel.html" height="400px"></iframe>
                             </div>
-                        
-                                    
-                                    
-                                </div>
+
+
+
                         </div>
                     </div>
                 </div>
-                
             </div>
 
+        </div>
 
-            
+
+
         </div>
         <div class="recipe-btn-div col sm-12 md-12 lg-4">
             <div class="ingredient-btn-div">
                 <button class="ingredient-btn" id="myBtn4">Ingredient</button><br>
                 <div id="myModal4" class="modal">
-                
+
                     <!-- Modal content -->
                     <div class="modal-content">
                         <div class="modeltop">
@@ -127,7 +141,7 @@
                         </div>
                         <p>Some text in the Modal..</p>
                     </div>
-                
+
                 </div>
                 <div class="recipe-nval-div row">
                     <div class="nval-div ">
@@ -143,9 +157,9 @@
 
             </div>
         </div>
-        
+
     </section>
-    
+
     <!-- FOOTER SECTION -->
     <footer>
         <div>
@@ -153,7 +167,9 @@
         </div>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+        crossorigin="anonymous"></script>
     <script>
 
         // Get the modal
@@ -165,7 +181,7 @@
         // Get the button that opens the modal
         var btn = document.getElementById("myBtn");
         var btn2 = document.getElementById("myBtn2");
-        var btn3= document.getElementById("myBtn3");
+        var btn3 = document.getElementById("myBtn3");
         var btn4 = document.getElementById("myBtn4");
 
         // Get the <span> element that closes the modal
@@ -175,35 +191,35 @@
         var span4 = document.getElementsByClassName("close")[3];
 
         // When the user clicks on the button, open the modal
-        btn.onclick = function() {
-        modal.style.display = "block";
+        btn.onclick = function () {
+            modal.style.display = "block";
         }
-        btn2.onclick = function() {
-        modal2.style.display = "block";
+        btn2.onclick = function () {
+            modal2.style.display = "block";
         }
-        btn3.onclick = function() {
-        modal3.style.display = "block";
+        btn3.onclick = function () {
+            modal3.style.display = "block";
         }
-        btn4.onclick = function() {
-        modal4.style.display = "block";
+        btn4.onclick = function () {
+            modal4.style.display = "block";
         }
 
         // When the user clicks on <span> (x), close the modal
-        span.onclick = function() {
-        modal.style.display = "none";
+        span.onclick = function () {
+            modal.style.display = "none";
         }
-        span2.onclick = function() {
-        modal2.style.display = "none";
+        span2.onclick = function () {
+            modal2.style.display = "none";
         }
-        span3.onclick = function() {
-        modal3.style.display = "none";
+        span3.onclick = function () {
+            modal3.style.display = "none";
         }
-        span4.onclick = function() {
-        modal4.style.display = "none";
+        span4.onclick = function () {
+            modal4.style.display = "none";
         }
 
         // When the user clicks anywhere outside of the modal, close it
-        window.onclick = function(event) {
+        window.onclick = function (event) {
             if (event.target == modal) {
                 modal.style.display = "none";
             }
@@ -220,4 +236,5 @@
 
     </script>
 </body>
+
 </html>

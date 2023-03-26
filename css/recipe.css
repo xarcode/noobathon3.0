@@ -1,4 +1,7 @@
-
+body{
+    background-image: linear-gradient( #fff7da, #fffcf0);
+    overflow: hidden;
+}
 
 h2, h3,h4, h5,h6 p{
     margin: 0;
@@ -17,13 +20,33 @@ h2, h3,h4, h5,h6 p{
   
 .main-img{
     margin: auto;
-    margin-top: 100px;
+    margin-top: 120px;
     height: 55vh;
     width: 85%;
     background-color: #872f45;
     border-radius: 50px;
     position: relative;
 }
+
+.buy-btn {
+    margin: 30px 0 0 0px;
+    height: 70px;
+    width: 300px;
+    background-color: none;
+    border-radius: 50px;
+    cursor: pointer;
+    border: 2px solid #235720;
+    background-color: #43803f;
+
+    color: #ffe877;
+    font-size: 1.5em;
+    font-weight: 800;
+}
+
+.recipe-btn-div{
+    margin-top: 60px;
+}
+
 .main-img-leftbtn{
     height: 25%;
     width: 60%;
@@ -120,6 +143,32 @@ hr{
     color: #591B2A;
     font-size: 1.5em;
     font-weight: 800;
+}
+
+.extras{
+    display:flex;
+}
+
+.extras div{
+    margin: auto;
+    margin: 10px 5px 0 30px;
+}
+.timer{
+    width: 80px;
+    height: 30px;
+    background-color:rgb(198, 30, 30);
+    text-align:center;
+    color: white;
+    border-radius:6px;
+}
+
+.difficulty{
+    width: 120px;
+    height: 30px;
+    background-color:#2c6587;
+    text-align:center;
+    color: white;
+    border-radius:6px;
 }
 
 /* Ingredient text*/
