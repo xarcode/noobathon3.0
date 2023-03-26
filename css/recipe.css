@@ -13,10 +13,7 @@ h2, h3,h4, h5,h6 p{
     height: 100vh;
     display: inline-block;
 }
-
-.recipe-img-div{
-    
-}   
+ 
   
 .main-img{
     margin: auto;
@@ -109,8 +106,7 @@ h2, h3,h4, h5,h6 p{
 }
 
 /* Recipe Text */
-.recipe-txt-div{
-}   
+
 .recipe-txt{
     margin: 100px 0 0 100px;
 }
@@ -201,8 +197,6 @@ hr{
 }
 
  /* Recipe Button Div*/ 
-.recipe-btn-div{
-} 
 .ingredient-btn-div{
     margin-top: 80px;
     display: flex;
