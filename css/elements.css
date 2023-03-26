@@ -40,3 +40,33 @@
     left: 487px;
     transform: rotate(-40deg);
 }
+
+
+.right-potato{
+    position: absolute;
+    width: 350px;
+    top: 75rem;
+    right: -6rem;
+    transform: rotate(-30deg);  
+}
+.left-onion{
+    position: absolute;
+    width: 350px;
+    top: 15rem;
+    left: -28rem;
+    transform: rotate(-30deg);  
+}
+.berry-right{
+    position: absolute;
+    width: 200px;
+    top: 10rem;
+    right: -11rem;
+    transform: rotate(30deg);  
+}
+.berry-left{
+    position: absolute;
+    width: 250px;
+    top: 0rem;
+    right: -13rem;
+    transform: rotate(-30deg);  
+}

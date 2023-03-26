@@ -41,8 +41,8 @@ body {
 .footer {
     font-family: 'Graphik';
     padding-top: 3em;
-    height: 80vh;
-    background-color: rgb(255, 255, 0);
+    height: 70vh;
+    background-image: linear-gradient( #1e531b, #639f5e);
     position: relative;
     clip-path: polygon(0 15%, 100% 0, 100% 100%, 0% 100%);
 }
@@ -69,7 +69,7 @@ body {
 input {
     /* width: 100%; */
     margin-left: 10px;
-    padding: 20px;
+    padding: 20px 40px 20px 40px;
     border-radius: 30px;
     font-size: large;
     border: 1px solid rgb(123, 123, 123);
@@ -77,11 +77,13 @@ input {
 }
 
 input[type='email'] {
-    width: 87%;
+    width: 50%;
+    font-size: 18px;
 }
 
 input[type='button'] {
     cursor: pointer;
+    margin-right: 30%;
 }
 
 input:focus {
