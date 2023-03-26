@@ -34,7 +34,7 @@ body {
 
 /* YELLOW BACKGROUND CODE */
 #bg-gradient{
-    background-image: linear-gradient( #fdd849, #feefa8);
+    background-image: linear-gradient( #f8ce25, #f8e37d);
     clip-path: polygon(0 0, 100% 0, 100% 80%, 0% 100%);
     margin-top: -15vh;
     color :rgb(255, 235, 133);
@@ -429,6 +429,10 @@ hr{
     color: #fff;
 }
 
+.title-logo{
+    width: 25rem;
+}
+
 .category-card:hover .button{
     scale: 1.09;
     top: 10%;
@@ -470,6 +474,12 @@ hr{
     align-items: center;
 }
 
+.up h1{
+    color: #f8e37d;
+}
+.data h2{
+    color: #171717;
+}
 .food-type-card:hover{
 
 }
@@ -512,4 +522,33 @@ hr{
     text-transform: uppercase;
     background-color: #450073;
     color: #fff;
+}
+
+
+.submit-btn {
+    height: 70px;
+    width: 150px;
+    background-color: none;
+    border-radius: 50px;
+    cursor: pointer;
+    border: 2px solid #235720;
+    background-color: #43803f;
+
+    color: #ffe877;
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.search-btn {
+    height: 70px;
+    width: 150px;
+    background-color: none;
+    border-radius: 50px;
+    cursor: pointer;
+    border: 2px solid #235720;
+    background-color: #43803f;
+    margin: 25px 0 10px 275px;
+    color: #fff8d3;
+    font-size: 20px;
+    font-weight: 800;
 }
